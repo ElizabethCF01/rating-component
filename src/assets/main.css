@@ -1,0 +1,176 @@
+@import './base.css';
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: hsl(0, 0%, 100%);
+}
+.text-center{
+  text-align: center;
+}
+.card{
+  max-width: 290px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
+  border-radius: 16px;
+  transition: all .4s ease;
+}
+.icon, .circle{
+  background-color: hsla(216, 12%, 54%, 0.103);
+  display: inline-block;
+  padding: 12.5px;
+  padding-bottom: 8px;
+  border-radius: 50%;
+}
+.circle{
+  padding: 14px;
+  padding-bottom: 9px;
+  margin-right: 1.2rem;
+  transition: all .4s ease;
+}
+.circle:hover{
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.circle.selected{
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 12%, 54%);
+}
+.icon img{
+  margin: 0;
+  padding: 0;
+  max-height: 14px;
+  max-width: 14px;
+}
+.title{
+  font-size: 1.65rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 1.2rem;
+}
+.card-body{
+color: hsl(217, 12%, 63%);
+}
+.description{
+  line-height: 1.5rem;
+  margin-top: .9rem;
+  font-size: 0.97rem;
+}
+.rating{
+  display: flex;
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
+}
+.circle div{
+  width: 14px;
+  text-align: center;
+}
+.card-footer{
+  display: flex;
+  padding-bottom: .7rem;
+}
+.btn-submit{
+  text-transform: uppercase;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 7.2rem;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+.btn-submit:hover{
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+circle:hover{
+  background-color: hsl(25, 97%, 53%);
+}
+/*section submited*/
+.card-img {
+  margin-top: .8rem;
+}
+.card-img img{
+  max-width: 150px;
+  max-height: 97px;
+}
+.ronded-circle{
+  border-radius: 50px;
+  background-color: hsla(216, 12%, 54%, 0.103);
+  padding: 8px 10px 5px 10px;
+  display: inline-block;
+  margin-top: 1.3rem;
+  margin-bottom: .4rem;
+}
+.ronded-circle p{
+  color: hsl(25, 97%, 53%);
+  margin: 0;
+}
+/*desktop*/
+@media (min-width : 728px){
+  .card{
+    max-width: 360px;
+    padding: 1.9rem;
+  }
+  .icon, .circle{
+    padding: 15px;
+    padding-bottom: 10px;
+  }
+  .icon img{
+    max-height: 18px;
+    max-width: 18px;
+  }
+  .icon{
+    margin-top: 2px;
+  }
+  .circle{
+    padding: 17px;
+    padding-bottom: 12px;
+    margin-right: 1.6rem;
+  }
+  .circle div{
+    width: 15px;
+    font-size: 1.1rem;
+  }
+  .title{
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+  .description{
+    line-height: 1.6rem;
+    margin-top: .7rem;
+    font-size: 16px;
+  }
+  .rating{
+    margin-bottom: 2rem;
+    margin-top: 1.6rem;
+  }
+  .btn-submit{
+    padding: 1rem 9.5rem;
+    font-weight: 700;
+  }
+  .card-footer{
+    padding-bottom: .4rem;
+  }
+  /*section submited*/
+  .card-img {
+    margin-top: 1rem;
+  }
+  .card-img img{
+    min-height: 108px;
+    min-width: 160px;
+  }
+  .ronded-circle{
+    padding: 9px 1.3rem 6px 1.3rem;
+    margin-top: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  .ronded-circle p{
+    color: hsl(25, 97%, 53%);
+    margin: 0;
+  }
+}
